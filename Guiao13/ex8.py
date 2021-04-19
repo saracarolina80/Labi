@@ -1,4 +1,5 @@
 import os
+import sys
 from Crypto.Cipher import AES
 from Crypto.Hash import SHA
 
@@ -39,10 +40,10 @@ while len(buffer) > 0:
 infile.close()
 
 # Prints cryptogram
-print "Cryptogram from file " + path + "\n\n" + cryptogram
+print ("Cryptogram from file " + path + "\n\n" + cryptogram)
 
 # -----------------------------------------------------------------
 # Decrypts file and prints result
 decipher = AES.new(key)
 decrypted = decipher.decrypt(cryptogram)
-print "\n--------------------------------------\nDecrypted file: \n\n" + decrypted
+print ("\n--------------------------------------\nDecrypted file: \n\n" + decrypted)
