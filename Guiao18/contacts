@@ -1,0 +1,14 @@
+CREATE TABLE contacts(
+	firstname TEXT,
+	middlename TEXT,
+	lastname TEXT,
+	email TEXT,
+	phone TEXT
+);
+
+INSERT INTO contacts VALUES( "João", "Tiago", "Silva", "joao@ua.pt", "923845678",
+			     "Maria", "João", "Andrade", "maria@ua.pt", "934345345",
+			     "Pedro", "Rodrigo", "Costa", "adaia@ua.pt", "934345345",
+			     "Sara" , "Carolina", "Gonçalves", "daddfria@ua.pt", "934345345"
+);
+
